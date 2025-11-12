@@ -1,1 +1,9 @@
-{"metadata":{"kernelspec":{"language":"python","display_name":"Python 3","name":"python3"},"language_info":{"name":"python","version":"3.11.13","mimetype":"text/x-python","codemirror_mode":{"name":"ipython","version":3},"pygments_lexer":"ipython3","nbconvert_exporter":"python","file_extension":".py"},"kaggle":{"accelerator":"none","dataSources":[],"dockerImageVersionId":31192,"isInternetEnabled":true,"language":"python","sourceType":"script","isGpuEnabled":false}},"nbformat_minor":4,"nbformat":4,"cells":[{"cell_type":"code","source":"\nfrom google.adk.agents.llm_agent import Agent\n\nroot_agent = Agent(\n    model='gemini-2.5-flash',\n    name='root_agent',\n    description='A helpful assistant for user questions.',\n    instruction='Answer user questions to the best of your knowledge and should answer should be short an precise',\n)\n","metadata":{"_uuid":"1326df63-4e81-4595-b687-327174472349","_cell_guid":"ba843319-c7a0-4380-86bf-7bc347482213","trusted":true,"collapsed":false,"jupyter":{"outputs_hidden":false}},"outputs":[],"execution_count":null}]}
+
+from google.adk.agents.llm_agent import Agent
+
+root_agent = Agent(
+    model='gemini-2.5-flash',
+    name='root_agent',
+    description='A helpful assistant for user questions.',
+    instruction='Answer user questions to the best of your knowledge and should answer should be short an precise',
+)
